@@ -67,7 +67,7 @@ a { color: inherit; }
 /* SVD group: logo vlevo, oranžová z loga, teplý neutrál */
 .hlavicka { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--line); }
 .hlavicka .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); min-height: 4.5rem; }
-.hlavicka .logo { display: block; flex: none; }
+.hlavicka .logo { display: flex; align-items: center; min-height: 44px; flex: none; }
 .hlavicka .logo img { height: 2.2rem; width: auto; }
 .hlavicka nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.25rem 1rem; font-size: var(--step--1); font-weight: 500; }
 .hlavicka nav a { text-decoration: none; }
@@ -82,7 +82,8 @@ a { color: inherit; }
 .tlacitko.druhe:hover { background: var(--dark); color: #fff; filter: none; }
 
 .hero { position: relative; background: #f3efec; overflow: hidden; }
-.hero-foto img { width: 100%; height: clamp(22rem, 48vw, 36rem); object-fit: cover; object-position: 0% 50%; }
+.hero-foto { max-width: 1000px; }
+.hero-foto img { width: 100%; height: clamp(22rem, 48vw, 36rem); object-fit: cover; object-position: 50% 50%; }
 .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(270deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.92) 40%, rgba(255,255,255,0) 72%); }
 @media (max-width: 52rem) { .hero::after { background: rgba(255,255,255,.88); } }
 .hero-text { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; justify-content: center; gap: var(--space-2); margin-inline: auto; }
@@ -132,6 +133,7 @@ a { color: inherit; }
 .paticka { background: #2b2a2a; color: #cfc8c1; padding-block: var(--space-4); font-size: var(--step--1); }
 .paticka a { color: #fff; }
 @media (max-width: 52rem) {
+  .hero-foto { max-width: none; }
   .hero::after { display: none; }
   .hero-foto img { height: 14rem; }
   .hero-text { position: static; padding-block: var(--space-4); background: #fff; }
