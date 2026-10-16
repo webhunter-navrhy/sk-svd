@@ -1,0 +1,32 @@
+[
+ {
+  "id": "kancelarie",
+  "nazev": "Sťahovanie kancelárií",
+  "popis": "Balenie, demontáž, preprava a následná montáž. Nábytok, PC aj audio/video techniku umiestnime tam, kam si vyberiete, a rušenie Vašej prevádzky držíme na minime."
+ },
+ {
+  "id": "vyroba",
+  "nazev": "Sťahovanie výroby",
+  "popis": "Výrobné linky pre automobilový priemysel, sústruhy a obrábacie stroje. Robíme aj medzinárodné sťahovanie výroby so zámorským balením a lodnou či kontajnerovou prepravou."
+ },
+ {
+  "id": "byty",
+  "nazev": "Sťahovanie bytov a domov",
+  "popis": "Pobalíme veci, prevezieme nábytok a spotrebiče a vo Vašom novom bývaní ich vybalíme a zmontujeme. Bratislava, Pezinok a okolie."
+ },
+ {
+  "id": "bremena",
+  "nazev": "Sťahovanie bremien",
+  "popis": "Trezory, bankomaty, klavíre, servery, sochy. Bremená do 20 ton."
+ },
+ {
+  "id": "doprava",
+  "nazev": "Nákladná doprava",
+  "popis": "Vnútroštátna aj medzinárodná preprava tovaru rôznej hmotnosti, vozidlá s hydraulickým čelom a vybavením na zabezpečenie nákladu. NON-STOP."
+ },
+ {
+  "id": "sklad",
+  "nazev": "Skladovanie a baliaci materiál",
+  "popis": "Súkromné skladové boxy v spolupráci so SELFSTORAGE a baliaci materiál podľa potreby, dodanie do 2 hodín po dohovore."
+ }
+]

@@ -1,0 +1,102 @@
+{% extends "_base.html" %}
+{% set titulek = 'Sťahovanie firiem, bytov a ťažkých bremien – SVD group Bratislava, Žilina, Martin' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="hero-foto">{{ img('hero.jpg', 'Prázdna miestnosť s naskladanými sťahovacími krabicami SVD', sizes='100vw') }}</div>
+  <div class="wrap hero-text">
+    <p class="ocko">Bratislava · Žilina · Martin</p>
+    <h1>Sťahovanie bez stresu, s úctou k Vašim veciam.</h1>
+    <p class="uvod">Sťahujeme firmy, kancelárie, byty aj ťažké bremená. Obhliadku a cenovú ponuku máte zadarmo.</p>
+    <div class="cta">
+      <a class="tlacitko" href="#kontakt">Cenová ponuka zadarmo</a>
+      <a class="tlacitko druhe" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="fakty" aria-label="SVD v kocke">
+  <div class="wrap fakty-mriezka">
+    {% for f in data.svd.fakty %}<div><strong>{{ f.cislo }}</strong><span>{{ f.text }}</span></div>{% endfor %}
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <h2>S čím Vám pomôžeme</h2>
+    <p class="podnadpis">Sťahovanie vybavíme od balenia po zmontovanie na novom mieste. Hlavné je pre nás „bezpečnosť a kvalita pri sťahovaní“.</p>
+    <ul role="list" class="karty">
+      {% for s in data.sluzby %}<li class="karta" id="{{ s.id }}"><span class="cislo">{{ loop.index }}</span><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tmava" id="bremena">
+  <div class="wrap dva">
+    <div>
+      <h2>Trezor, klavír alebo stroj? Máme na to techniku aj ľudí.</h2>
+      <p>Presun trezorov, bankomatov, sústruhov, sôch z mramoru či kovu a klavírov si vyžaduje iné vybavenie než bežné sťahovanie. Skúsenosti so sťahovaním bremien do 20 ton máme dlhé roky a postaráme sa o balenie, nakladanie, prepravu aj vykladanie.</p>
+    </div>
+    <ul role="list" class="odrazky">
+      <li>Odkotvenie a kotvenie trezorov na určenom mieste</li>
+      <li>Obhliadka zadarmo</li>
+      <li>Sťahovanie do 2 hodín po objednávke cez pracovný deň</li>
+      <li>Sťahujeme NON-STOP</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="postup">
+  <div class="wrap">
+    <h2>Ako prebieha sťahovanie</h2>
+    <ol role="list" class="kroky">
+      <li><h3>Bezplatná obhliadka</h3><p>Prídeme k Vám, pozrieme priestory a navrhneme najvýhodnejšie riešenie.</p></li>
+      <li><h3>Cenová ponuka</h3><p>Na základe obhliadky Vám pripravíme cenovú kalkuláciu zdarma.</p></li>
+      <li><h3>Balenie a nakladanie</h3><p>Veci označíme podľa miestností, nábytok obalíme a naložíme.</p></li>
+      <li><h3>Preprava a vybalenie</h3><p>Na novom mieste všetko vyložíme, zmontujeme a rozmiestnime podľa Vás.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sekce svetla" id="o-nas">
+  <div class="wrap dva">
+    <div>
+      <h2>Sťahovanie a doprava po celom Slovensku od roku 1997</h2>
+      <p>SVD group s.r.o. vznikla v septembri 1997 pod názvom SVD&amp;Co., v januári 2005 sa premenovala. Od roku 2008 máme pobočky aj v Žiline a Martine. Sme poistení, takže Váš majetok je počas celého sťahovania chránený.</p>
+    </div>
+    <div>
+      <h3>Pre nich sme sťahovali</h3>
+      <ul role="list" class="znacky">
+        {% for r in data.svd.referencie %}<li>{{ r }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="pobocky">
+  <div class="wrap">
+    <h2>Pobočky</h2>
+    <div class="pobocky">
+      {% for p in data.svd.pobocky %}
+      <article class="pobocka">
+        <h3>{{ p.mesto }}</h3>
+        {% if p.adresa %}<p>{{ p.adresa }}</p>{% endif %}
+        <p>{% for t in p.tel %}<a href="tel:{{ t|replace(' ', '') }}">{{ t }}</a>{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
+        <p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+        <p><a href="https://www.stahovaniesvd.sk/download/{{ p.cennik }}" rel="noopener">Cenník {{ p.mesto }} (PDF)</a></p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce tmava" id="kontakt">
+  <div class="wrap dva">
+    <div>
+      <h2>Cenová ponuka zadarmo</h2>
+      <p>Napíšte nám, čo a kam treba presťahovať. Ozveme sa s cenovou ponukou, prípadne s termínom bezplatnej obhliadky.</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

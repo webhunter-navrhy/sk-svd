@@ -1,0 +1,67 @@
+{
+ "fakty": [
+  {
+   "cislo": "1997",
+   "text": "vznik firmy, od 2005 SVD group s.r.o."
+  },
+  {
+   "cislo": "2 h",
+   "text": "sťahovanie vieme zabezpečiť do 2 hodín po objednávke cez pracovný deň"
+  },
+  {
+   "cislo": "NON-STOP",
+   "text": "sťahujeme a prepravujeme aj mimo pracovných hodín"
+  },
+  {
+   "cislo": "20 t",
+   "text": "ťažké bremená, ktoré vieme presunúť"
+  }
+ ],
+ "referencie": [
+  "Slovenské národné divadlo",
+  "Tatra banka",
+  "ČSOB",
+  "OTP Banka",
+  "Kúpele Piešťany",
+  "Ministerstvo zahraničných vecí",
+  "Ministerstvo školstva",
+  "Fakultná nemocnica",
+  "Red Bull",
+  "Bosch",
+  "Michelin",
+  "Goodyear",
+  "Ericsson",
+  "Group 4 Falck"
+ ],
+ "pobocky": [
+  {
+   "mesto": "Bratislava",
+   "adresa": "Staré Grunty 36, 841 04 Bratislava",
+   "tel": [
+    "+421 905 319 509",
+    "+421 2 6020 1711"
+   ],
+   "email": "svd@svdgroup.sk",
+   "cennik": "cennik-bratislava.pdf"
+  },
+  {
+   "mesto": "Žilina",
+   "adresa": "Mila Urbana 6, 010 01 Žilina",
+   "tel": [
+    "+421 911 319 509",
+    "+421 41 5652 662"
+   ],
+   "email": "zilina@svdgroup.sk",
+   "cennik": "cennik-zilina.pdf"
+  },
+  {
+   "mesto": "Martin",
+   "adresa": "",
+   "tel": [
+    "+421 911 319 509"
+   ],
+   "email": "martin@svdgroup.sk",
+   "cennik": "cennik-martin.pdf"
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "sk-svd",
+  "nazev": "SVD group",
+  "url": "https://webhunter-navrhy.github.io/sk-svd/",
+  "base": "/sk-svd/",
+  "lang": "sk",
+  "popis": "Sťahovanie firiem, kancelárií, bytov a ťažkých bremien do 20 t, nákladná doprava a skladovanie. Bratislava, Žilina, Martin. Obhliadka a cenová ponuka zadarmo.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "logo.svg",
+  "theme_color": "#434242",
+  "typ": "MovingCompany",
+  "ico": "35917326",
+  "kontakt": {
+    "email": "svd@svdgroup.sk",
+    "telefon": "+421 905 319 509",
+    "adresa": {
+      "ulice": "Staré Grunty 36",
+      "psc": "841 04",
+      "mesto": "Bratislava",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Cenová ponuka z webu"
+  },
+  "nav": [
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Ťažké bremená",
+      "href": "#bremena"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Pobočky",
+      "href": "#pobocky"
+    },
+    {
+      "text": "Cenová ponuka",
+      "href": "#kontakt"
+    }
+  ]
+}
